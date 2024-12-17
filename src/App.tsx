@@ -1,26 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+/* eslint-disable @typescript-eslint/no-unused-vars */
+import "./App.scss";
+import Test from "./components/Test/Test";
+import Content from "./Content/Content";
+import Footer from "./Footer/Footer";
+import Header from "./Header/Header";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* <Test /> */}
+      <Header />
+    <Content/>
+      <Footer/>
+    </>
   );
-}
+};
 
 export default App;

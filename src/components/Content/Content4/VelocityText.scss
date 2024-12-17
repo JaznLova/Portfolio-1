@@ -1,0 +1,47 @@
+.parallax {
+  overflow: hidden;
+  line-height: 1.8;
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.parallax .scroller {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 64px;
+  display: flex;
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.parallax span {
+  opacity: 0.9;
+  color: var(--black);
+  display: block;
+  margin-right: 30px;
+}
+.component {
+
+  margin-top: clamp(7.5rem, 34.2857vw + -5.7143rem, 20rem);
+  display: flex;
+  flex-direction: column;
+  .upper-text {
+    z-index: 100;
+  }
+  .lower-text {
+    z-index: 300;
+  }
+  img {
+    width: clamp(26rem, 32vw + 16rem, 40rem);
+    height: auto;
+    margin-top: clamp(-32rem, calc(-20rem + 5vw), -22rem);
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 200;
+  }
+}
+.component *{
+  font-size: clamp(6rem, 9.1429vw + 3.1429rem, 10rem);
+  font-family: "Canopee",sans-serif;
+}

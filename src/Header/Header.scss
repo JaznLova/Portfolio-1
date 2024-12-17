@@ -1,0 +1,15 @@
+nav {
+  z-index: 9999; 
+  position: fixed;
+  align-items: center;
+  display: flex;
+  width: 90%;
+  margin: clamp(2rem, 3.4286vw + 0.9286rem, 3.5rem) auto 0 auto;
+  justify-content: space-between;
+  left: 5%;
+  div {
+    font-size: clamp(1rem, 0.5714vw + 0.8214rem, 1.25rem);
+    font-family: "Canopee", sans-serif;
+    font-weight: bold;
+  }
+}

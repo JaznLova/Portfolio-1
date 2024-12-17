@@ -1,0 +1,55 @@
+$speed: 0.25s;
+
+.btn-text {
+  background-color: transparent;
+  height: 3.4rem;
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 3rem;
+  transition: transform $speed;
+  font-size: 1.2rem;
+  color: var(--obsidian);
+
+  &:hover {
+    &:after {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: none;
+    }
+    &:before {
+      pointer-events: none;
+      opacity: 0;
+      transform: translateY(50%);
+    }
+  }
+
+  &:after {
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    display: block;
+    transition: $speed;
+    position: absolute;
+    content: attr(data-back);
+    line-height: 3rem;
+    pointer-events: none;
+    transform: translateY(-50%);
+  }
+
+  &:before {
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    display: block;
+    line-height: 3rem;
+    transition: $speed;
+    position: relative;
+    content: attr(data-front);
+    transform: translateY(0);
+  }
+}

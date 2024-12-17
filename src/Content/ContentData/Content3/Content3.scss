@@ -1,0 +1,19 @@
+.content-3-container {
+  margin: 20vh auto 0 auto;
+  max-width: 90%;
+  .videos {
+    display: inline-flex;
+    gap: clamp(1rem, 2.2857vw + .2857rem, 1.75rem);
+    flex-direction: column; 
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%; 
+    
+    .video-2 {
+      display: inline-flex;
+      margin-left: auto; 
+
+    }
+  }
+}
+

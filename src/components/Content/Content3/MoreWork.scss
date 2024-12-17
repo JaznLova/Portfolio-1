@@ -1,0 +1,24 @@
+.work {
+  margin-left: clamp(0px, 40.4286vw + -11.0714rem, 30rem);
+  .title {
+    color: var(--grey-text);
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+  .content {
+    width: clamp(22.5rem, 62.8571vw + 2.8571rem, 50rem);
+    height: auto;
+    font-size: clamp(1.75rem, 1.7143vw + 1.2143rem, 2.5rem);
+    .item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+      div {
+        gap: 0.5rem;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}

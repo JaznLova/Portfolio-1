@@ -1,0 +1,23 @@
+.hand-button {
+  padding: clamp(0.4rem, 0.3429vw + 0.2429rem, 0.5rem)
+    clamp(1rem, 1.1429vw + 0.6429rem, 1.5rem);
+  width: clamp(7rem, 10.2857vw + 3.7857rem, 11.5rem);
+  height: clamp(7rem, 10.2857vw + 3.7857rem, 11.5rem);
+  font-size: clamp(2rem, 2.2857vw + 1.2857rem, 3rem);
+  background-color: var(--orange);
+  border: 1px solid var(--grey-text);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  .hand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .arrow {
+    position: absolute;
+  }
+}

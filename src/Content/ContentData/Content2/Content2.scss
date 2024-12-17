@@ -1,0 +1,85 @@
+.content-2-container {
+  .floating-text {
+    margin-top: clamp(3rem, 16vw + -2rem, 10rem);
+    position: relative;
+    font-size: clamp(1.5rem, 0.9143vw + 1.3143rem, 2rem);
+    margin-left: clamp(2rem, 102.8571vw + -32.1429rem, 45rem);
+    display: flex;
+    gap: 1rem;
+    .icon {
+      width: 3vw;
+      height: 3vw;
+      display: inline-block;
+    }
+    .text {
+      gap: 1rem;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  h5 {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    color: var(--grey-text);
+    margin: 5vh 0 8vh 5%;
+  }
+  .video {
+    display: block;
+    width: 80%;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    margin: 9vh auto 0 auto;
+    border-radius: 1.2rem;
+  }
+  .text-2 {
+    margin: 20vh auto 0 auto;
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+    .text-left {
+      font-size: clamp(0.7rem, 0.6857vw + 0.4857rem, 1rem);
+      color: var(--grey-text);
+      display: flex;
+      flex-direction: column;
+      h2 {
+        margin-top: 1rem;
+      }
+    }
+    .animated-text {
+      margin-left: 2vw;
+      display: "inline-block";
+      font-size: clamp(2rem, 4vw + 0.75rem, 3.75rem);
+      line-height: clamp(3rem, 3.4286vw + 1.9286rem, 4.5rem);
+      max-width: 60%;
+    }
+  }
+  .title {
+    margin-top: 20vh;
+    max-width: fit-content;
+    position: relative;
+    flex-direction: column;
+    padding-left: 5%;
+    display: flex;
+    font-size: clamp(4.1rem, 10.7429vw + 0.9429rem, 9rem);
+    text-transform: uppercase;
+    font-family: Canopee, sans-serif;
+    .title-text {
+      display: inline-block;
+    }
+    .title-sticker {
+      border-radius: 0.5rem;
+      rotate: -12deg;
+      margin-top: clamp(1rem, 2.2857vw + 0.2857rem, 2rem);
+      margin-left: auto;
+      max-width: fit-content;
+      background-color: var(--orange);
+      color: #fff;
+      padding-top: clamp(0.4rem, 0.4571vw + 0.3571rem, 0.7rem);
+      padding-bottom: clamp(0.4rem, 0.4571vw + 0.3571rem, 0.7rem);
+      padding-left: clamp(0.8rem, 1.1429vw + 0.6429rem, 1.5rem);
+      padding-right: clamp(0.8rem, 1.1429vw + 0.6429rem, 1.5rem);
+      font-size: clamp(1.25rem, 1.7143vw + 0.7143rem, 2rem);
+    }
+  }
+}
